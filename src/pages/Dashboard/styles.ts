@@ -64,8 +64,14 @@ export const TableContainer = styled.section`
     }
 
     td {
+      border-color: #ffffff;
+      border-style: solid;
+      border-top-width: 2px;
+      border-bottom-width: 2px;
+      border-left-width: 0;
+      border-right-width: 0;
+
       padding: 20px 32px;
-      border: 0;
       background: #fff;
       font-size: 16px;
       font-weight: normal;
@@ -84,12 +90,18 @@ export const TableContainer = styled.section`
       }
     }
 
+    tr:hover td {
+      border-color: #ff872c;
+    }
+
     td:first-child {
+      border-left-width: 2px;
       border-radius: 8px 0 0 8px;
     }
 
     td:last-child {
       border-radius: 0 8px 8px 0;
+      border-right-width: 2px;
     }
   }
 `;
